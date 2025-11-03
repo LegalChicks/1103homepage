@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Chicks Empowerment Network - From Hard Work to High Value</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- PWA Manifest (Embedded) -->
+    <link rel="manifest" href="data:application/json;base64,ew0KICAic2hvcnRfbmFtZSI6ICJMQ0VOIiwNCiAgIm5hbWUiOiAiTGVnYWwgQ2hpY2tzIEVtcG93ZXJtZW50IE5ldHdvcmsiLA0KICAiaWNvbnMiOiBbDQogICAgew0KICAgICAgInNyYyI6ICJodHRwczovL3BsYWNlaG9sZC5jby8xOTJ4MTkyLzhCNDUxMy9GRkZGRkY/dGV4dD1MQ0UiLA0KICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIg0KICAgIH0sDQogICAgew0KICAgICAgInNyYyI6ICJodHRwczovL3BsYWNlaG9sZC5jby81MTJ4NTEyLzhCNDUxMy9GRkZGRkY/dGV4dD1MQ0UiLA0KICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIg0KICAgIH0NCiAgXSwNCiAgInN0YXJ0X3VybCI6ICIuIiwNCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsDQogICJ0aGVtZV9jb2xvciI6ICIjODQzYzBmIiwNCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiINCn0=">
+
+    <style>
+        /* Base font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Custom color palette */
+        :root {
+            --color-primary: #8B4513; /* SaddleBrown - strong, earthy */
+            --color-accent: #F59E0B;   /* Amber 500 - optimistic, warm */
+            --color-dark: #1F2937;     /* Gray 800 - professional text */
+            --color-light-bg: #F9FAFB; /* Gray 50 - clean background */
+        }
+
+        /* Scrollytelling / Micro-interaction Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Bento Grid Hover Effect */
+        .bento-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Custom Button Styles */
+        .btn {
+            @apply inline-block px-6 py-3 rounded-lg text-base font-semibold transition-all duration-300 shadow-md;
+        }
+        .btn-primary {
+            @apply bg-amber-500 text-stone-900 hover:bg-amber-600 hover:shadow-lg transform hover:-translate-y-0.5;
+        }
+        .btn-secondary {
+            @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-stone-900;
+        }
+        .btn-dark {
+             @apply bg-stone-800 text-white hover:bg-stone-900 hover:shadow-lg transform hover:-translate-y-0.5;
+        }
+        
+        /* Button loading state */
+        .btn-loading {
+            @apply relative cursor-not-allowed;
+        }
+        .btn-loading::after {
+            content: '';
+            @apply absolute inset-0 flex items-center justify-center;
+            @apply bg-white/30;
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+        }
+        .btn-loading::before {
+            content: '';
+            @apply absolute top-1/2 left-1/2 -mt-3 -ml-3;
+            @apply h-6 w-6 rounded-full border-2 border-t-transparent border-stone-900 animate-spin;
+            animation: spin 0.6s linear infinite;
+        }
+
+
+        /* Sticky Header Shadow on Scroll */
+        .header-scrolled {
+            @apply shadow-lg bg-white/95 backdrop-blur-sm;
+        }
+        
+        /* Multi-step form progress bar */
+        .progress-bar-inner {
+            transition: width 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-stone-900">
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-3" aria-label="Homepage">
+                    <!-- Using the logo from your business plan, stylized -->
+                    <img src="https://placehold.co/48x48/8B4513/FFFFFF?text=LCE&font=inter" alt="LCE Logo" class="h-10 w-10 rounded-full">
+                    <span class="text-xl font-bold text-stone-800 hidden sm:block">Legal Chicks</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Home</a>
+                    <a href="#platform" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">The Platform</a>
+                    <a href="#success" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Success Stories</a>
+                    <a href="#packages" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Packages</a>
+                    <a href="#membership" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Membership</a>
+                    <a href="#partners" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Partners</a>
+                    <a href="#blog" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Blog</a>
+                </div>
+
+                <!-- Call to Action Buttons -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="#partners" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Partner With Us</a>
+                    
+                    <!-- Login/Dashboard Buttons -->
+                    <button id="header-login-btn-desktop" class="btn btn-dark btn-sm px-4 py-2">Member Login</button>
+                    <a href="#membership" class="btn btn-primary">Join the Network</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-stone-600 hover:text-stone-900 hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu, show/hide based on menu state. -->
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-b-lg border-t border-stone-100">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Home</a>
+                <a href="#platform" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">The Platform</a>
+                <a href="#success" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Success Stories</a>
+                <a href="#packages" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Packages</a>
+                <a href="#membership" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Membership</a>
+                <a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Partners</a>
+                <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Blog</a>
+                <div class="border-t border-stone-200 my-2"></div>
+                
+                <!-- Mobile Login/Dashboard -->
+                <a href="#membership" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium btn btn-primary">Join the Network</a>
+                
+                <button id="header-login-btn-mobile" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium btn btn-dark mt-2">Member Login</button>
+                
+                <a href="#partners" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium text-stone-700 hover:bg-stone-100">Partner With Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="relative h-screen min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden">
+            <!-- Video/Image Background -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://placehold.co/1920x1080/5a3821/ffffff?text=Empowering+Filipina+Farmers+(Video+Placeholder)" 
+                     alt="Filipina farmers working" 
+                     class="object-cover w-full h-full"
+                     onerror="this.src='https://placehold.co/1920x1080/5a3821/ffffff?text=Video+Placeholder'"/>
+                <!-- Dark Overlay -->
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 p-4 fade-in-section is-visible">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+                    From Hard Work to High Value
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/90 mb-10">
+                    Legal Chicks arms Filipina poultry farmers with the <strong>data</strong> to farm smarter, the <strong>community</strong> to stand stronger, and the <strong>market access</strong> to sell for what you're truly worth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#membership" class="btn btn-primary text-lg px-8 py-4">Join the Network</a>
+                    <a href="#partners" class="btn btn-secondary text-lg px-8 py-4">Partner With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NEW: PACKAGES & HOW TO JOIN ========== -->
+        <section id="packages" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                
+                <!-- How to Join -->
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Your Path to Empowerment</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">How to Join the Network</p>
+                    <p class="mt-4 text-xl text-stone-600 max-w-3xl mx-auto">
+                        Joining is a simple, guided process. We're with you every step of the way.
+                    </p>
+                    
+                    <!-- 3-Step Process -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+                        <!-- Step 1 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">1</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Choose Your Package</h3>
+                                <p class="text-stone-600 mt-1">Select the starter package or franchise tier that best fits your goals and capital.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">2</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Apply Online</h3>
+                                <p class="text-stone-600 mt-1">Fill out our simple multi-step application form with your basic and farm details.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">3</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Get Verified & Start</h3>
+                                <p class="text-stone-600 mt-1">Our team will contact you to verify your application and begin your "Guided Business Warranty" mentorship.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Display -->
+                <div class="text-center mb-14 pt-12 border-t border-stone-200 fade-in-section">
+                     <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Membership Packages</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Find Your Fit</Services>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 fade-in-section items-stretch">
+                    
+                    <!-- Package 1: Starter -->
+                    <div class="bg-slate-50 rounded-2xl p-8 shadow-lg border-2 border-transparent flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900">Starter Package</h3>
+                        <p class="text-sm font-medium text-stone-500 mb-4">Ideal for Urban Families</p>
+                        <p class="text-4xl font-extrabold text-stone-900 mb-4">₱20,000<span class="text-lg font-medium text-stone-500">+</span></p>
+                        <p class="text-stone-600 mb-6 min-h-[50px]">A complete, guided, low-barrier entry for backyard income generation.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Essential Chicks & Feeds</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Starter Coop Kit</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>"Guided Business Warranty"</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1-Year Network Membership</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="starter-modal" class="font-semibold text-amber-600 hover:text-amber-700 mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-dark w-full">Apply for Starter</a>
+                    </div>
+                    
+                    <!-- Package 2: Franchise (Highlight) -->
+                    <div class="bg-stone-800 text-white rounded-2xl p-8 shadow-2xl border-2 border-amber-500 relative flex flex-col scale-105">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-amber-500 text-stone-900 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Most Popular</span>
+                        <h3 class="text-2xl font-bold text-white">Franchise Tier</h3>
+                        <p class="text-sm font-medium text-amber-400 mb-4">Ideal for OFW Returnees & Investors</p>
+                        <p class="text-4xl font-extrabold text-white mb-4">₱150,000<span class="text-lg font-medium text-stone-400">+</span></p>
+                        <p class="text-stone-300 mb-6 min-h-[50px]">A turnkey solution to own your poultry business under the Legal Chicks brand.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>All Starter Package features, scaled</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Official LCE Branding Rights</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Guaranteed Supplier Access</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in Joint Marketing</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Become a Regional "Ambassador"</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="franchise-modal" class="font-semibold text-amber-400 hover:text-white mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-primary w-full">Apply for Franchise</a>
+                    </div>
+
+                    <!-- Package 3: Business/Rural Farmer -->
+                    <div class="bg-slate-50 rounded-2xl p-8 shadow-lg border-2 border-transparent flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900">Business Package</h3>
+                        <p class="text-sm font-medium text-stone-500 mb-4">Ideal for Rural Farmers & SMEs</p>
+                        <p class="text-4xl font-extrabold text-stone-900 mb-4">₱100,000<span class="text-lg font-medium text-stone-500">+</span></p>
+                        <p class="text-stone-600 mb-6 min-h-[50px]">Scale your existing farm or business with our supply chain and tech.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Large-scale Chick/Feed Supply</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full Platform Access (KPIs, AI)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to Collective Marketing</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Financing Assistance</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="business-modal" class="font-semibold text-amber-600 hover:text-amber-700 mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-dark w-full">Apply for Business</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- ========== END PACKAGES ========== -->
+
+        <!-- ========== MEMBERSHIP ========== -->
+        <section id="membership" class="py-16 sm:py-24 bg-slate-50">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center fade-in-section">
+                    <!-- Value Proposition -->
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight mb-6">Ready to Join the Network?</h2>
+                        <p class="text-xl text-stone-600 mb-8">
+                            Membership gives you exclusive access to the tools, community, and markets you need to build a profitable, sustainable, and compliant business.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-lg text-stone-700">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-green-600 mr-3"></i>
+                                Access to Better Pricing on Feed & Supplies
+                            </li>
+                            <li class="flex items-center text-lg text-stone-700">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-green-600 mr-3"></i>
+                                24/7 Expert Support & Community Forums
+                            </li>
+                            <li class="flex items-center text-lg text-stone-700">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-green-600 mr-3"></i>
+                                Direct Market Linkage to Premium Buyers
+                            </li>
+                            <li class="flex items-center text-lg text-stone-700">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-green-600 mr-3"></i>
+                                AI Co-Pilot & Real-Time KPI Dashboards
+                            </li>
+                            <li class="flex items-center text-lg text-stone-700">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-green-600 mr-3"></i>
+                                Legal, Compliance & Certification Kits
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Multi-Step Form -->
+                    <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl border border-stone-100">
+                        <form id="multi-step-form">
+                            <h3 class="text-2xl font-bold text-center text-stone-900 mb-2">Apply for Membership</h3>
+                            <p class="text-center text-stone-600 mb-6">Start your application today. It only takes a few minutes.</p>
+                            
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
+                                <div id="progress-bar" class="bg-amber-500 h-2.5 rounded-full progress-bar-inner" style="width: 33.33%"></div>
+                            </div>
+                            
+                            <!-- Step 1: Basic Info -->
+                            <div id="form-step-1" class="form-step">
+                                <h4 class="text-lg font-semibold mb-4">Step 1: Basic Info</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-stone-700">Full Name</label>
+                                        <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-stone-700">Email Address</label>
+                                        <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-stone-700">Phone Number</label>
+                                        <input type="tel" name="phone" id="phone" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                </div>
+                                <button type="button" data-next-step="2" class="btn btn-primary w-full mt-6 form-nav-btn">Next: Farm Details</button>
+                            </div>
+                            
+                            <!-- Step 2: Farm Details -->
+                            <div id="form-step-2" class="form-step hidden">
+                                <h4 class="text-lg font-semibold mb-4">Step 2: Farm Details</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label for="farm-name" class="block text-sm font-medium text-stone-700">Farm Name (if any)</label>
+                                        <input type="text" name="farm-name" id="farm-name" class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                    <div>
+                                        <label for="farm-location" class="block text-sm font-medium text-stone-700">Farm Location (Province)</label>
+                                        <input type="text" name="farm-location" id="farm-location" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                    <div>
+                                        <label for="farm-size" class="block text-sm font-medium text-stone-700">Current Flock Size (e.g., 500 birds)</label>
+                                        <input type="text" name="farm-size" id="farm-size" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                                    </div>
+                                </div>
+                                <div class="flex gap-4 mt-6">
+                                    <button type="button" data-prev-step="1" class="btn bg-slate-200 text-slate-700 hover:bg-slate-300 w-1/3 form-nav-btn">Back</button>
+                                    <button type="button" data-next-step="3" class="btn btn-primary w-2/3 form-nav-btn">Next: Verification</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3: Verification -->
+                            <div id="form-step-3" class="form-step hidden">
+                                <h4 class="text-lg font-semibold mb-4">Step 3: Verification</h4>
+                                <p class="text-stone-600 mb-4">Thank you! An LCE representative will contact you shortly to verify your details and complete your application.</p>
+                                <p class="text-sm text-stone-500 mb-6">By submitting, you agree to our terms and to be contacted by the Legal Chicks Empowerment Network.</p>
+                                <div class="flex gap-4 mt-6">
+                                    <button type="button" data-prev-step="2" class="btn bg-slate-200 text-slate-700 hover:bg-slate-300 w-1/3 form-nav-btn">Back</button>
+                                    <button type="submit" id="form-submit-btn" class="btn btn-dark w-2/3">Submit Application</button>
+                                </div>
+                                <div id="form-error" class="hidden text-red-600 text-sm text-center mt-4"></div>
+                            </div>
+                            
+                            <!-- Form Success Message -->
+                            <div id="form-success" class="hidden text-center">
+                                <i data-lucide="party-popper" class="w-16 h-16 text-green-600 mx-auto mb-4"></i>
+                                <h3 class="text-2xl font-bold text-stone-900 mb-2">Application Received!</h3>
+                                <p class="text-lg text-stone-600">Welcome to the network! We're excited to have you. Our team will be in touch within 24-48 hours.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PARTNERS & RESOURCES ========== -->
+        <section id="partners" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14 fade-in-section">
+                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Get Involved</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Partners & Resources</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in-section">
+                    <!-- For Partners -->
+                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg bento-box">
+                        <i data-lucide="building" class="w-12 h-12 text-amber-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">For Partners</h3>
+                        <p class="text-stone-600 text-lg mb-6">
+                            We collaborate with suppliers, government agencies (like the DA), and NGOs to build a stronger agricultural ecosystem. If you share our vision of empowerment, we want to hear from you.
+                        </p>
+                        <a href="#membership" class="btn btn-dark">Partner With Us</a>
+                    </div>
+                    <!-- Public Blog -->
+                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg bento-box">
+                        <i data-lucide="book-open" class="w-12 h-12 text-amber-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Public Blog & Resources</h3>
+                        <p class="text-stone-600 text-lg mb-6">
+                            Read our latest insights on poultry management, market trends, and legal compliance, designed to attract farmers via Google.
+                        </p>
+                        <a href="#blog" class="btn btn-dark">Read Our Blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NEW: BLOG SECTION ========== -->
+        <section id="blog" class="py-16 sm:py-24 bg-slate-50">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14 fade-in-section">
+                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Insights</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">From Our Blog</p>
+                    <p class="mt-4 text-xl text-stone-600 max-w-3xl mx-auto">
+                        Knowledge from our experts to help you grow.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in-section">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden bento-box">
+                        <img src="https://placehold.co/600x400/ece7d5/444444?text=DA+Circular" alt="DA Circular" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/ece7d5/444444?text=Placeholder'">
+                        <div class="p-6">
+                            <span class="text-sm text-stone-500">Compliance | Nov 01, 2025</span>
+                            <h4 class="text-xl font-bold text-stone-900 my-2">5 Key Changes in the Latest DA Circular</h4>
+                            <p class="text-stone-600 mb-4 text-sm">We break down the new regulations so you can stay compliant and focus on your business.</p>
+                            <a href="httpsV-Link-Button="https://www.da.gov.ph/issuances/"" target="_blank" rel="noopener noreferrer" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden bento-box">
+                        <img src="https://placehold.co/600x400/d4e4f7/444444?text=FCR+Calculation" alt="Calculating FCR" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/d4e4f7/444444?text=Placeholder'">
+                        <div class="p-6">
+                            <span class="text-sm text-stone-500">Farm Ops | Oct 28, 2025</span>
+                            <h4 class="text-xl font-bold text-stone-900 my-2">How to Calculate Your Feed Conversion Ratio (FCR)</h4>
+                            <p class="text-stone-600 mb-4 text-sm">This one metric is key to your profitability. Learn the simple way to track it and improve it.</p>
+                            <a href="httpsV-Link-Button="https://e-extension.gov.ph/"" target="_blank" rel="noopener noreferrer" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden bento-box">
+                        <img src="https://placehold.co/600x400/ece7d5/444444?text=Biosecurity" alt="Biosecurity" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/ece7d5/444444?text=Placeholder'">
+                        <div class="p-6">
+                            <span class="text-sm text-stone-500">Best Practices | Oct 22, 2025</span>
+                            <h4 class="text-xl font-bold text-stone-900 my-2">Biosecurity 101: Protecting Your Flock (and Profit)</h4>
+                            <p class="text-stone-600 mb-4 text-sm">The 3 simple, low-cost procedures every farmer must implement today to prevent disaster.</p>
+                            <a href="httpsV-Link-Button="https://www.bai.gov.ph/"" target="_blank" rel="noopener noreferrer" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FINAL CTA ========== -->
+        <section id="final-cta" class="py-16 sm:py-24 bg-stone-800 text-white">
+            <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center fade-in-section">
+                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6">
+                    Stop Competing. Start Conquering.
+                </h2>
+                <p class="text-xl text-stone-300 mb-10">
+                    Your hard work deserves more than just survival. It deserves to win. Join a network that gives you the legal, digital, and community tools to thrive. Take control of your business, your future, and your legacy.
+                </TA>
+                <a href="#membership" class="btn btn-primary text-lg px-10 py-4">
+                    Apply for Membership Today
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-stone-900 text-stone-300">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1: Brand & Mission -->
+                <div class="md:col-span-2">
+                    <a href="#home" class="flex items-center space-x-3 mb-4" aria-label="Homepage">
+                        <img src="https://placehold.co/48x48/8B4513/FFFFFF?text=LCE&font=inter" alt="LCE Logo" class="h-10 w-10 rounded-full">
+                        <span class="text-xl font-bold text-white">Legal Chicks Empowerment Network</span>
+                    </a>
+                    <!-- Mission from your business plan -->
+                    <p class="text-stone-400 mb-4 pr-4">
+                        <strong>Mission:</strong> To provide sustainable livelihood and food security to Cagayanos through accessible poultry business opportunities, high-quality local poultry products, and comprehensive farmer empowerment.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#!" class="text-stone-400 hover:text-white" rel="noopener noreferrer" target="_blank"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                        <a href="#!" class="text-stone-400 hover:text-white" rel="noopener noreferrer" target="_blank"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                        <a href="#!" class="text-stone-400 hover:text-white" rel="noopener noreferrer" target="_blank"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                        <a href="#!" class="text-stone-400 hover:text-white" rel="noopener noreferrer" target="_blank"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-sm font-semibold text-stone-100 tracking-wider uppercase mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#platform" class="text-stone-400 hover:text-white transition-colors">The Platform</a></li>
+                        <li><a href="#success" class="text-stone-400 hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#membership" class="text-stone-400 hover:text-white transition-colors">Membership</a></li>
+                        <li><a href="#partners" class="text-stone-400 hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="#blog" class="text-stone-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div>
+                    <h4 class="text-sm font-semibold text-stone-100 tracking-wider uppercase mb-4">Contact Us</h4>
+                    <!-- Contact info from your business plan -->
+                    <ul class="space-y-3 text-stone-400">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Tuguegarao City, Cagayan Valley, Philippines</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="mail" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                            <a href="mailto:info@legalchicks.ph" class="hover:text-white">info@legalchicks.ph</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="phone" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                            <a href="tel:+639171234567" class="hover:text-white">+63 (917) 123 4567</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-12 pt-8 border-t border-stone-700 text-center text-stone-500 text-sm">
+                <p>&copy; <span id="current-year"></span> Legal Chicks Empowerment Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- ========== LOGIN MODAL ========== -->
+    <div id="login-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+
+        <!-- Modal Panel -->
+        <div class="relative z-10 w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-stone-400 hover:text-stone-600">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <h2 class="text-3xl font-bold text-stone-900 text-center mb-4">Member Login</h2>
+            <p class="text-stone-600 text-center mb-6">Access your LCE Dashboard.</p>
+
+            <form id="login-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="login-email" class="block text-sm font-medium text-stone-700">Email Address</label>
+                        <input type="email" name="login-email" id="login-email" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="login-password" class="block text-sm font-medium text-stone-700">Password</label>
+                        <input type="password" name="login-password" id="login-password" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    
+                    <!-- NEW: Forgot Password Link -->
+                    <div class="text-right text-sm">
+                        <a href="mailto:admin@legalchicks.vip?subject=Forgot%20Password%20Request" class="font-medium text-amber-600 hover:underline">
+                            Forgot Password?
+                        </a>
+                    </div>
+                </div>
+                <div id="login-error" class="hidden text-red-600 text-sm text-center mt-4"></div>
+                <button type="submit" id="login-submit-btn" class="btn btn-primary w-full mt-6">
+                    Log In
+                </button>
+                <p class="text-sm text-center text-stone-500 mt-4">
+                    Not a member? <a href="#membership" id="login-join-link" class="font-medium text-amber-600 hover:underline">Apply here</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== NEW: PACKAGE MODALS ========== -->
+
+    <!-- Starter Package Modal -->
+    <div id="starter-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Starter Package</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱20,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Hardware & Supplies</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>50 Day-Old-Chicks (Pure, Vaccinated RIR)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Sacks LCE-Certified Starter Feed</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Standard Waterers</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Standard Feeders</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1 Brooder Heat Lamp & Bulb</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1 Digital Thermometer</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Support & Platform</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>"Guided Business Warranty" (Mentorship until 1st profit)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1-Year LCE Network Membership</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to LCE App (Community & Basic KPIs)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>DIY Starter Coop Blueprints & Guide</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to LGU & DA Partnership Programs</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business Package Modal -->
+    <div id="business-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Business Package</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱100,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Platform & Tech</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full LCE Platform Access (KPIs, Benchmarking)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>LCE "Co-Pilot" AI Assistant (Pro Tier)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to Gamified Learning Hub</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Predictive Alerts (Weather & Flock Health)</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Market & Supply Chain</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Exclusive Access to Bulk-Rate Pricing on Chicks & Feeds</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Eligibility for "Legal Chicks Certified" Program</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in Collective Market Hub (Sell to Hotels, etc.)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Supply Chain & Logistics Support</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Facilitated Financing Assistance</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Franchise Package Modal -->
+    <div id="franchise-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Franchise Tier</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱150,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Business-in-a-Box</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Official LCE Branding & Logo License</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Scaled Starter Kit (250+ RIR Chicks, Feeds, Equip.)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Guaranteed, First-Priority Supply Chain Access</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in National Joint Marketing Campaigns</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Become a Regional "LCE Ambassador"</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Platform & Exclusivity</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full LCE Platform Access (KPIs, AI Co-Pilot)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Regional Admin Dashboard (to manage referrals)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Exclusive rights to host LCE Orientations in your area</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Receive 5% Referral Commission Bonus</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Direct Support from LCE Leadership</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== END PACKAGE MODALS ========== -->
+
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script type="module">
+        // Import Firebase modules
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, addDoc, collection, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- FIREBASE & APP STATE ---
+        let app, db, auth;
+        let LCE_APP_ID = 'default-app-id';
+
+        async function initializeFirebase() {
+            if (typeof __firebase_config === 'undefined') {
+                console.error('Firebase config is not available.');
+                return;
+            }
+            
+            try {
+                const firebaseConfig = JSON.parse(__firebase_config);
+                app = initializeApp(firebaseConfig);
+                db = getFirestore(app);
+                auth = getAuth(app);
+                setLogLevel('Debug'); // Enable Firestore logging
+
+                // 1. Get App ID
+                if (typeof __app_id !== 'undefined') {
+                    LCE_APP_ID = __app_id;
+                }
+                window.LCE_APP_ID = LCE_APP_ID; // Make it globally available for the form
+                console.log("App ID:", LCE_APP_ID);
+
+                // 2. Authenticate the user
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+                console.log("Firebase initialized and user signed in anonymously.", auth.currentUser?.uid);
+
+            } catch (error) {
+                console.error("Firebase initialization error:", error);
+            }
+        }
+        
+        // --- STANDARD PAGE SCRIPT ---
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Initialize Firebase first
+            initializeFirebase();
+
+            // 1. Initialize Lucide Icons
+            lucide.createIcons();
+            
+            // 2. Mobile Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                // Toggle icon
+                menuBtn.innerHTML = !isExpanded ? '<i data-lucide="x" class="h-6 w-6"></i>' : '<i data-lucide="menu" class="h-6 w-6"></i>';
+                lucide.createIcons(); // Re-render icon
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    mobileMenu.classList.add('hidden');
+                    menuBtn.innerHTML = '<i data-lucide="menu" class="h-6 w-6"></i>';
+                    lucide.createIcons();
+                });
+            });
+
+            // 3. Sticky Header on Scroll
+            const header = document.getElementById('header');
+            const logoText = header.querySelector('span'); // Get the logo text
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                    logoText.classList.remove('text-white'); // Will be black by default
+                } else {
+                    header.classList.remove('header-scrolled');
+                    // We only want white text when it's over the dark hero
+                    // On mobile, the bg is white, so we don't add white text
+                    if (!mobileMenu.classList.contains('hidden')) {
+                         logoText.classList.remove('text-white');
+                    } else { // Only add white text if not logged in and on top
+                         logoText.classList.add('text-white');
+                    }
+                }
+            });
+
+            // 4. Scrollytelling (Fade-in Sections)
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // 5. Animated Counters
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('[data-counter-target]');
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-counter-target');
+                            const duration = 2000;
+                            let current = 0;
+                            const increment = target / (duration / 16); // ~60fps
+                            
+                            const updateCounter = () => {
+                                current += increment;
+                                if (current < target) {
+                                    counter.innerText = formatCounter(current, target);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = formatCounter(target, target);
+                                }
+                            };
+                            updateCounter();
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const countersSection = document.getElementById('impact-counters');
+            if(countersSection) {
+                 counterObserver.observe(countersSection);
+            }
+
+            function formatCounter(num, target) {
+                if (target === 45000000) return `₱${Math.floor(num).toLocaleString()}+`;
+                if (target === 1250) return `${Math.floor(num).toLocaleString()}+`;
+                if (target === 18) return `${Math.floor(num)}%`;
+                if (target === 8200) return `${Math.floor(num).toLocaleString()}+`;
+                return Math.floor(num).toLocaleString();
+            }
+
+            // 6. Testimonial Carousel
+            const testimonialContainer = document.getElementById('testimonial-container');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+            
+            if (testimonialContainer) {
+                const slides = testimonialContainer.children;
+                let currentIndex = 0;
+                const totalSlides = slides.length;
+                
+                function updateCarousel() {
+                    testimonialContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+                
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                });
+                
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                });
+
+                // Auto-play
+                setInterval(() => {
+                    nextBtn.click();
+                }, 5000); // Change slide every 5 seconds
+            }
+
+            // 7. Multi-Step Form with REAL Backend
+            const form = document.getElementById('multi-step-form');
+            const progressBar = document.getElementById('progress-bar');
+            const successMessage = document.getElementById('form-success');
+            const errorMessage = document.getElementById('form-error');
+            
+            form.addEventListener('click', (e) => {
+                if (e.target.matches('.form-nav-btn')) {
+                    const nextStep = e.target.getAttribute('data-next-step');
+                    const prevStep = e.target.getAttribute('data-prev-step');
+                    
+                    if (nextStep) {
+                        // Basic validation
+                        let currentStepEl = document.getElementById(`form-step-${nextStep - 1}`);
+                        let inputs = currentStepEl.querySelectorAll('input[required]');
+                        let valid = true;
+                        inputs.forEach(input => {
+                            if (!input.value) {
+                                input.classList.add('border-red-500');
+                                input.classList.add('focus:border-red-500');
+                                input.classList.add('focus:ring-red-500');
+                                valid = false;
+                            } else {
+                                input.classList.remove('border-red-500');
+                                input.classList.remove('focus:border-red-500');
+                                input.classList.remove('focus:ring-red-500');
+                            }
+                        });
+                        
+                        if (!valid) return;
+                        
+                        // Navigate
+                        document.getElementById(`form-step-${nextStep - 1}`).classList.add('hidden');
+                        document.getElementById(`form-step-${nextStep}`).classList.remove('hidden');
+                        progressBar.style.width = `${(nextStep / 3) * 100}%`;
+                    }
+                    
+                    if (prevStep) {
+                        // Find current step to hide it
+                        let currentStepNum = parseInt(prevStep) + 1;
+                        document.getElementById(`form-step-${currentStepNum}`).classList.add('hidden');
+                        document.getElementById(`form-step-${prevStep}`).classList.remove('hidden');
+                        progressBar.style.width = `${(prevStep / 3) * 100}%`;
+                    }
+                }
+            });
+            
+            // Make the submit handler async to await database operations
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const submitBtn = document.getElementById('form-submit-btn');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Submitting...';
+                submitBtn.classList.add('btn-loading');
+                errorMessage.classList.add('hidden'); // Hide old errors
+
+                // --- REAL BACKEND WORK ---
+                // 1. Collect form data
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+                data.status = 'pending'; // Add a status for review
+                data.submittedAt = new Date().toISOString(); // Add a timestamp
+
+                // 2. Get App ID from window
+                const appId = window.LCE_APP_ID || 'default-app-id';
+                const collectionPath = `/artifacts/${appId}/public/data/membership_applications`;
+
+                try {
+                    // 3. Save to Firestore
+                    if (!db) {
+                        throw new Error("Database is not initialized.");
+                    }
+                    
+                    const docRef = await addDoc(collection(db, collectionPath), data);
+                    
+                    console.log("--- FORM SUBMISSION (REAL BACKEND) ---");
+                    console.log("Data saved to Firestore collection:", collectionPath);
+                    console.log("Document ID:", docRef.id);
+                    console.log("Data:", data);
+                    console.log("---------------------------------------");
+
+                    // 4. Show success
+                    // Wait a tiny bit for the animation to feel real
+                    setTimeout(() => {
+                        document.getElementById('form-step-3').classList.add('hidden');
+                        progressBar.parentElement.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                        lucide.createIcons();
+                    }, 500); // 0.5 second delay
+
+                } catch (error) {
+                    console.error("Error adding document to Firestore: ", error);
+                    // Show error message to user
+                    errorMessage.textContent = 'Error: Could not submit application. Please check your connection and try again.';
+                    errorMessage.classList.remove('hidden');
+                    // Re-enable the button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Application';
+                    submitBtn.classList.remove('btn-loading');
+                }
+            });
+
+
+            // 8. Set Current Year in Footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 9. --- NEW: LOGIN & DASHBOARD LOGIC ---
+
+            const loginModal = document.getElementById('login-modal');
+            const loginForm = document.getElementById('login-form');
+            const loginSubmitBtn = document.getElementById('login-submit-btn');
+            const loginError = document.getElementById('login-error');
+            
+            // Header buttons
+            const loginBtns = [
+                document.getElementById('header-login-btn-desktop'),
+                document.getElementById('header-login-btn-mobile')
+            ];
+
+            // --- REFACTORED MODAL LOGIC ---
+            
+            // Get all modal components
+            const modalContainers = document.querySelectorAll('.modal-container');
+            const modalOpenBtns = document.querySelectorAll('.modal-open-btn');
+            const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+            const modalBackdrops = document.querySelectorAll('.modal-backdrop');
+            const modalApplyBtns = document.querySelectorAll('.modal-apply-btn');
+
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    lucide.createIcons(); // Render icons in modal
+                }
+            }
+
+            function closeModal(modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+
+            // Open Modals
+            modalOpenBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modalId = btn.getAttribute('data-modal-target');
+                    openModal(modalId);
+                });
+            });
+
+            // Close Modals with 'X' button
+            modalCloseBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modal = btn.closest('.modal-container');
+                    closeModal(modal);
+                });
+            });
+
+            // Close Modals by clicking backdrop
+            modalBackdrops.forEach(backdrop => {
+                backdrop.addEventListener('click', () => {
+                    const modal = backdrop.closest('.modal-container');
+                    closeModal(modal);
+                });
+            });
+
+            // Close Modals and scroll to apply form
+            modalApplyBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modal = btn.closest('.modal-container');
+                    closeModal(modal);
+                    // No need for smooth scroll, the link href="#membership" handles it
+                });
+            });
+
+
+            // Handle Login Form (Simulation)
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                loginError.classList.add('hidden');
+
+                const email = document.getElementById('login-email').value;
+                const pass = document.getElementById('login-password').value;
+
+                if (!email || !pass) {
+                    loginError.textContent = 'Please enter both email and password.';
+                    loginError.classList.remove('hidden');
+                    return;
+                }
+
+                // Start loading
+                loginSubmitBtn.disabled = true;
+                loginSubmitBtn.innerHTML = 'Logging In...';
+                loginSubmitBtn.classList.add('btn-loading');
+
+                // Simulate a network request
+                setTimeout(() => {
+                    // --- SIMULATED VALIDATION ---
+                    // In a real app, this would be a fetch() call to your backend
+                    if (email === "member@legalchicks.vip" && pass === "password123") {
+                        // VALID
+                        console.log("Login successful (simulation)");
+                        loginSubmitBtn.innerHTML = 'Success! Redirecting...';
+                        
+                        // Redirect to the page the user will provide later
+                        setTimeout(() => {
+                            window.location.href = "member-dashboard.html"; // Placeholder redirect
+                        }, 1000);
+
+                    } else {
+                        // INVALID
+                        console.log("Login failed (simulation)");
+                        loginSubmitBtn.disabled = false;
+                        loginSubmitBtn.innerHTML = 'Log In';
+                        loginSubmitBtn.classList.remove('btn-loading');
+                        
+                        loginError.textContent = 'Invalid email or password. Please try again.';
+                        loginError.classList.remove('hidden');
+                    }
+                }, 1500); // 1.5 second simulated delay
+            });
+
+        });
+    </script>
+</body>
+</html>
+
