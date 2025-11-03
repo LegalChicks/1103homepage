@@ -118,6 +118,7 @@
                     <a href="#home" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Home</a>
                     <a href="#platform" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">The Platform</a>
                     <a href="#success" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Success Stories</a>
+                    <a href="#packages" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Packages</a>
                     <a href="#membership" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Membership</a>
                     <a href="#partners" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Partners</a>
                     <a href="#blog" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Blog</a>
@@ -126,6 +127,9 @@
                 <!-- Call to Action Buttons -->
                 <div class="hidden lg:flex items-center space-x-4">
                     <a href="#partners" class="font-medium text-stone-600 hover:text-amber-600 transition-colors">Partner With Us</a>
+                    
+                    <!-- Login/Dashboard Buttons -->
+                    <button id="header-login-btn-desktop" class="btn btn-dark btn-sm px-4 py-2">Member Login</button>
                     <a href="#membership" class="btn btn-primary">Join the Network</a>
                 </div>
 
@@ -145,11 +149,17 @@
                 <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Home</a>
                 <a href="#platform" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">The Platform</a>
                 <a href="#success" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Success Stories</a>
+                <a href="#packages" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Packages</a>
                 <a href="#membership" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Membership</a>
                 <a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Partners</a>
                 <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-600 hover:bg-stone-50">Blog</a>
                 <div class="border-t border-stone-200 my-2"></div>
+                
+                <!-- Mobile Login/Dashboard -->
                 <a href="#membership" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium btn btn-primary">Join the Network</a>
+                
+                <button id="header-login-btn-mobile" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium btn btn-dark mt-2">Member Login</button>
+                
                 <a href="#partners" class="block w-full text-center px-4 py-2 rounded-md text-base font-medium text-stone-700 hover:bg-stone-100">Partner With Us</a>
             </div>
         </div>
@@ -185,324 +195,113 @@
             </div>
         </section>
 
-        <!-- ========== WHAT WE DO (BENTO) ========== -->
-        <section id="what-we-do" class="py-16 sm:py-24 bg-slate-50">
+        <!-- ========== NEW: PACKAGES & HOW TO JOIN ========== -->
+        <section id="packages" class="py-16 sm:py-24 bg-white">
             <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14 fade-in-section">
-                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">The LCE Advantage</h2>
-                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">We provide the tools. You build the empire.</p>
-                </div>
-
-                <!-- Bento Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Box 1 (Large) -->
-                    <div class="md:col-span-2 bg-white p-8 rounded-2xl shadow-lg bento-box fade-in-section">
-                        <i data-lucide="bar-chart-3" class="w-12 h-12 text-amber-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Digitize & Optimize: Your Farm in Your Pocket</h3>
-                        <p class="text-stone-600 text-lg">
-                            Stop running your business on guesswork. Our mobile app is your personal dashboard. Track real-time KPIs—from feed costs per egg to flock mortality—and get AI-powered advice that directly boosts your profit.
-                        </p>
-                    </div>
-                    <!-- Box 2 (Small) -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg bento-box fade-in-section" style="transition-delay: 100ms;">
-                        <i data-lucide="users" class="w-12 h-12 text-amber-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Unite & Support</h3>
-                        <p class="text-stone-600">
-                            Never farm alone. Connect with a 1,200+ strong network of women who get it. Share solutions in 24/7 forums and get on-demand help.
-                        </p>
-                    </div>
-                    <!-- Box 3 (Small) -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg bento-box fade-in-section" style="transition-delay: 200ms;">
-                        <i data-lucide="truck" class="w-12 h-12 text-amber-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Grow & Sell</h3>
-                        <p class="text-stone-600">
-                            Access premium markets. We streamline your "Legal" compliance and certifications, then connect you to high-value contracts reserved only for our network.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== DATA STORYTELLING (COUNTERS) ========== -->
-        <section id="impact-counters" class="py-16 sm:py-24 bg-stone-800 text-white">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14 fade-in-section">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">This is What Empowerment Looks Like</h2>
-                    <p class="mt-4 text-xl text-stone-300 max-w-3xl mx-auto">Real results from real members. Our network is a proven model for success.</p>
-                </div>
-                <!-- Figures from your business plan -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center fade-in-section">
-                    <div>
-                        <span class="block text-5xl md:text-6xl font-extrabold text-amber-400" data-counter-target="45000000">0</span>
-                        <span class="block mt-2 text-lg font-medium text-stone-300">In Network Sales (₱)</span>
-                    </div>
-                    <div>
-                        <span class="block text-5xl md:text-6xl font-extrabold text-amber-400" data-counter-target="1250">0</span>
-                        <span class="block mt-2 text-lg font-medium text-stone-300">Empowered Members</span>
-                    </div>
-                    <div>
-                        <span class="block text-5xl md:text-6xl font-extrabold text-amber-400" data-counter-target="18">0</span>
-                        <span class="block mt-2 text-lg font-medium text-stone-300">Avg. Feed Cost Reduction (%)</span>
-                    </div>
-                    <div>
-                        <span class="block text-5xl md:text-6xl font-extrabold text-amber-400" data-counter-target="8200">0</span>
-                        <span class="block mt-2 text-lg font-medium text-stone-300">Hours of Expert Training</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SOCIAL PROOF (TESTIMONIALS) ========== -->
-        <section id="testimonials" class="py-16 sm:py-24 bg-white overflow-hidden">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14 fade-in-section">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">"LCE Changed My Business"</h2>
-                </div>
-
-                <!-- Testimonial Carousel -->
-                <div class="relative fade-in-section">
-                    <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
-                        <!-- Slide 1 -->
-                        <div class="w-full flex-shrink-0 px-2">
-                            <div class="bg-slate-50 rounded-2xl p-8 md:p-12 shadow-lg max-w-3xl mx-auto">
-                                <i data-lucide="play-circle" class="w-12 h-12 text-amber-500 mb-4"></i>
-                                <p class="text-2xl font-medium text-stone-700 mb-6">"The LCE dashboard showed me I was overspending on feeds by 22%. I made one change and saved ₱20,000 last month. I'd never have known without the app."</p>
-                                <div class="font-bold text-stone-900">— Maria K., Batangas</div>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="w-full flex-shrink-0 px-2">
-                            <div class="bg-slate-50 rounded-2xl p-8 md:p-12 shadow-lg max-w-3xl mx-auto">
-                                <i data-lucide="play-circle" class="w-12 h-12 text-amber-500 mb-4"></i>
-                                <p class="text-2xl font-medium text-stone-700 mb-6">"I used to just sell to my local market. LCE helped me get 'Good Agricultural Practices' certified and connected me to a major hotel buyer. My income has doubled."</p>
-                                <div class="font-bold text-stone-900">— Anna L., Isabela</div>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="w-full flex-shrink-0 px-2">
-                            <div class="bg-slate-50 rounded-2xl p-8 md:p-12 shadow-lg max-w-3xl mx-auto">
-                                <i data-lucide="play-circle" class="w-12 h-12 text-amber-500 mb-4"></i>
-                                <p class="text-2xl font-medium text-stone-700 mb-6">"When the DA released a new biosecurity circular, the LCE app gave me a 3-point summary that day. I was compliant before anyone else. That's peace of mind."</p>
-                                <div class="font-bold text-stone-900">— Joy R., Tarlac</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Controls -->
-                    <button id="prev-testimonial" class="absolute top-1/2 left-0 sm:left-16 -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 shadow-md transition-all backdrop-blur-sm">
-                        <i data-lucide="chevron-left" class="w-6 h-6 text-stone-700"></i>
-                    </button>
-                    <button id="next-testimonial" class="absolute top-1/2 right-0 sm:right-16 -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 shadow-md transition-all backdrop-blur-sm">
-                        <i data-lucide="chevron-right" class="w-6 h-6 text-stone-700"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== THE PLATFORM ========== -->
-        <section id="platform" class="py-16 sm:py-24 bg-slate-50">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14 fade-in-section">
-                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">The Platform</h2>
-                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Your Farm, Powered by LCE</p>
+                
+                <!-- How to Join -->
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Your Path to Empowerment</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">How to Join the Network</p>
                     <p class="mt-4 text-xl text-stone-600 max-w-3xl mx-auto">
-                        Our member-exclusive platform puts a Data Scientist, a Legal Advisor, and a National Sales Team in your pocket.
+                        Joining is a simple, guided process. We're with you every step of the way.
                     </p>
-                </div>
-
-                <!-- Feature 1: Co-Pilot -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 fade-in-section">
-                    <div class="pr-0 md:pr-12">
-                        <span class="inline-flex items-center gap-x-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                            <i data-lucide="cpu" class="w-4 h-4"></i>
-                            AI-Powered
-                        </span>
-                        <h3 class="text-3xl font-bold text-stone-900 mb-4">Meet Your "LCE Co-Pilot"</h3>
-                        <p class="text-lg text-stone-600 mb-6">
-                            This is not a simple search bar. It's a generative AI assistant that understands poultry farming. It's trained on our entire legal library, vet guides, and community discussions to give you expert answers, instantly.
-                        </p>
-                        <ul class="space-y-3 text-stone-600">
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Diagnose Problems Faster:</strong> Upload a photo or describe a symptom to get an AI-powered diagnosis.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Translate "Legalese" into Action:</strong> Summarizes new DA circulars into 3 things you need to do today.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Automate Your Admin:</strong> Use voice commands to draft weekly performance reports from your KPIs.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="https://placehold.co/600x450/ece7d5/444444?text=AI+Chat+Interface+Mockup" alt="AI Co-Pilot Interface" class="rounded-2xl shadow-xl w-full" onerror="this.src='https://placehold.co/600x450/ece7d5/444444?text=Image+Placeholder'">
-                    </div>
-                </div>
-
-                <!-- Feature 2: Dashboard -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 fade-in-section">
-                    <div class="order-2 md:order-1">
-                        <img src="https://placehold.co/600x450/d4e4f7/444444?text=Real-Time+Farm+KPIs" alt="KPI Dashboard Mockup" class="rounded-2xl shadow-xl w-full" onerror="this.src='https://placehold.co/600x450/d4e4f7/444444?text=Image+Placeholder'">
-                    </div>
-                    <div class="pl-0 md:pl-12 order-1 md:order-2">
-                        <span class="inline-flex items-center gap-x-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                            <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
-                            Real-Time Data
-                        </span>
-                        <h3 class="text-3xl font-bold text-stone-900 mb-4">Your Real-Time Farm Dashboard</h3>
-                        <p class="text-lg text-stone-600 mb-6">
-                            Stop running your business from a paper notebook. Our dashboard turns your farm's data into your biggest advantage, showing you exactly what's happening so you can make smart decisions.
-                        </p>
-                        <ul class="space-y-3 text-stone-600">
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Track Your Profit Drivers:</strong> Instantly see Feed Conversion Ratio (FCR), Feed Cost per Egg, and Mortality Rate.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Get Predictive Alerts:</strong> "ALERT: Your Flock 3's water consumption is down 15%. This is a high-risk indicator for heat stress."</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Benchmark Your Best:</strong> Compare your performance to the anonymized network average to see where to improve.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Feature 3: Market Hub -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 fade-in-section">
-                    <div class="pr-0 md:pr-12">
-                        <span class="inline-flex items-center gap-x-2 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                            Market Access
-                        </span>
-                        <h3 class="text-3xl font-bold text-stone-900 mb-4">The Market & Supply Chain Hub</h3>
-                        <p class="text-lg text-stone-600 mb-6">
-                            This is where your hard work becomes real wealth. Stop taking whatever price you can get. As an LCE member, you move from a small-scale seller to a part of a national supply powerhouse.
-                        </p>
-                        <ul class="space-y-3 text-stone-600">
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Access Premium Buyers:</strong> List your product and become part of high-volume contracts with major hotels and supermarkets.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Get Paid for Your Quality:</strong> We help streamline your "Legal" certifications to market your product as "LCE Certified" and demand a premium price.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="https://placehold.co/600x450/ece7d5/444444?text=Supply+Chain+Diagram" alt="Market Hub Graphic" class="rounded-2xl shadow-xl w-full" onerror="this.src='https://placehold.co/600x450/ece7d5/444444?text=Image+Placeholder'">
-                    </div>
-                </div>
-
-                <!-- Feature 4: Learning Hub -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center fade-in-section">
-                    <div class="order-2 md:order-1">
-                        <img src="https://placehold.co/600x450/d4e4f7/444444?text=Member+Certification+Profile" alt="Member Profile with Badges" class="rounded-2xl shadow-xl w-full" onerror="this.src='https://placehold.co/600x450/d4e4f7/444444?text=Image+Placeholder'">
-                    </div>
-                    <div class="pl-0 md:pl-12 order-1 md:order-2">
-                        <span class="inline-flex items-center gap-x-2 bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                            <i data-lucide="award" class="w-4 h-4"></i>
-                            Learning & Compliance
-                        </span>
-                        <h3 class="text-3xl font-bold text-stone-900 mb-4">Your Path to "Legally" Compliant</h3>
-                        <p class="text-lg text-stone-600 mb-6">
-                            Compliance is confusing. We make it simple, clear, and a direct path to higher profits. Our Learning Hub turns complex standards into a competitive advantage.
-                        </p>
-                        <ul class="space-y-3 text-stone-600">
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Learn at Your Pace:</strong> Complete simple, interactive modules on biosecurity, tax compliance, and organic standards from your phone.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Earn Your Badges:</strong> Receive digital "certifications" on your network profile.</span>
-                            </li>
-                             <li class="flex items-start">
-                                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                                <span><strong>Unlock Exclusive Markets:</strong> Only members with the "Organic Certified" badge can sell into our high-value organic supply pool.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SUCCESS STORIES ========== -->
-        <section id="success" class="py-16 sm:py-24 bg-white">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14 fade-in-section">
-                    <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Success Stories</h2>
-                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">See Our Impact Across the Nation</p>
-                </div>
-                
-                <!-- Interactive Map Placeholder -->
-                <div class="mb-16 fade-in-section">
-                    <h3 class="text-2xl font-bold text-stone-900 mb-4 text-center">Interactive Member Map</h3>
-                    <p class="text-lg text-stone-600 mb-6 text-center max-w-2xl mx-auto">Click on a region to discover the stories of members who are transforming their businesses and communities.</p>
-                    <div class="bg-slate-100 rounded-2xl p-4 shadow-inner">
-                        <img src="https://placehold.co/1200x600/d4e4f7/333333?text=Interactive+Member+Map" alt="Map of the Philippines" class="rounded-lg w-full h-auto object-cover" onerror="this.src='https://placehold.co/1200x600/d4e4f7/333333?text=Map+Placeholder'">
-                    </div>
-                </div>
-
-                <!-- In-Depth Case Studies -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in-section">
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 bento-box">
-                        <img src="https://placehold.co/600x400/ece7d5/444444?text=Anna+L.+on+her+farm" alt="Case Study Member" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/600x400/ece7d5/444444?text=Placeholder'">
-                        <div class="p-8">
-                            <h4 class="text-xl font-bold text-stone-900 mb-2">How Anna L. Got Certified and Landed Her First Supermarket Contract</h4>
-                            <p class="text-stone-600 mb-4">"LCE didn't just give me tools; they gave me a plan. The legal and compliance modules were a game-changer. Now, my income is stable and growing."</p>
-                            <a href="#!" class="font-semibold text-amber-600 hover:text-amber-700">Read Her Story <span aria-hidden="true">&rarr;</span></a>
+                    
+                    <!-- 3-Step Process -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+                        <!-- Step 1 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">1</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Choose Your Package</h3>
+                                <p class="text-stone-600 mt-1">Select the starter package or franchise tier that best fits your goals and capital.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 bento-box">
-                        <img src="https://placehold.co/600x400/d4e4f7/444444?text=Maria+K.+with+her+dashboard" alt="Case Study Member 2" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/600x400/d4e4f7/444444?text=Placeholder'">
-                        <div class="p-8">
-                            <h4 class="text-xl font-bold text-stone-900 mb-2">From Guesswork to Growth: Maria K.'s Data-Driven Journey</h4>
-                            <p class="text-stone-600 mb-4">"I thought I knew my farm. The KPI dashboard proved I was missing key insights. Cutting my feed cost by 18% wasn't luck; it was data."</p>
-                            <a href="#!" class="font-semibold text-amber-600 hover:text-amber-700">Read Her Story <span aria-hidden="true">&rarr;</span></a>
+                        <!-- Step 2 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">2</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Apply Online</h3>
+                                <p class="text-stone-600 mt-1">Fill out our simple multi-step application form with your basic and farm details.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-amber-500 text-stone-900 font-bold text-xl mr-4">3</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-stone-900">Get Verified & Start</h3>
+                                <p class="text-stone-600 mt-1">Our team will contact you to verify your application and begin your "Guided Business Warranty" mentorship.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Package Display -->
+                <div class="text-center mb-14 pt-12 border-t border-stone-200 fade-in-section">
+                     <h2 class="text-base font-semibold text-amber-600 tracking-wide uppercase">Membership Packages</h2>
+                    <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Find Your Fit</Services>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 fade-in-section items-stretch">
+                    
+                    <!-- Package 1: Starter -->
+                    <div class="bg-slate-50 rounded-2xl p-8 shadow-lg border-2 border-transparent flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900">Starter Package</h3>
+                        <p class="text-sm font-medium text-stone-500 mb-4">Ideal for Urban Families</p>
+                        <p class="text-4xl font-extrabold text-stone-900 mb-4">₱20,000<span class="text-lg font-medium text-stone-500">+</span></p>
+                        <p class="text-stone-600 mb-6 min-h-[50px]">A complete, guided, low-barrier entry for backyard income generation.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Essential Chicks & Feeds</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Starter Coop Kit</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>"Guided Business Warranty"</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1-Year Network Membership</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="starter-modal" class="font-semibold text-amber-600 hover:text-amber-700 mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-dark w-full">Apply for Starter</a>
+                    </div>
+                    
+                    <!-- Package 2: Franchise (Highlight) -->
+                    <div class="bg-stone-800 text-white rounded-2xl p-8 shadow-2xl border-2 border-amber-500 relative flex flex-col scale-105">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-amber-500 text-stone-900 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Most Popular</span>
+                        <h3 class="text-2xl font-bold text-white">Franchise Tier</h3>
+                        <p class="text-sm font-medium text-amber-400 mb-4">Ideal for OFW Returnees & Investors</p>
+                        <p class="text-4xl font-extrabold text-white mb-4">₱150,000<span class="text-lg font-medium text-stone-400">+</span></p>
+                        <p class="text-stone-300 mb-6 min-h-[50px]">A turnkey solution to own your poultry business under the Legal Chicks brand.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>All Starter Package features, scaled</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Official LCE Branding Rights</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Guaranteed Supplier Access</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in Joint Marketing</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Become a Regional "Ambassador"</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="franchise-modal" class="font-semibold text-amber-400 hover:text-white mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-primary w-full">Apply for Franchise</a>
+                    </div>
+
+                    <!-- Package 3: Business/Rural Farmer -->
+                    <div class="bg-slate-50 rounded-2xl p-8 shadow-lg border-2 border-transparent flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900">Business Package</h3>
+                        <p class="text-sm font-medium text-stone-500 mb-4">Ideal for Rural Farmers & SMEs</p>
+                        <p class="text-4xl font-extrabold text-stone-900 mb-4">₱100,000<span class="text-lg font-medium text-stone-500">+</span></p>
+                        <p class="text-stone-600 mb-6 min-h-[50px]">Scale your existing farm or business with our supply chain and tech.</p>
+                        <ul class="space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Large-scale Chick/Feed Supply</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full Platform Access (KPIs, AI)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to Collective Marketing</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Financing Assistance</span></li>
+                        </ul>
+                        <!-- NEW: Details Button -->
+                        <button data-modal-target="business-modal" class="font-semibold text-amber-600 hover:text-amber-700 mb-6 modal-open-btn">See Detailed Inclusions <span aria-hidden="true">&rarr;</span></button>
+                        <a href="#membership" class="btn btn-dark w-full">Apply for Business</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
-<!-- PACKAGES SECTION COPIED FROM HOMEPAGE.HTML -->
-<section id="packages" class="py-16 sm:py-24 bg-white">
-<div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-base font-semibold text-amber-600 uppercase">Your Path to Empowerment</h2>
-<p class="mt-2 text-4xl font-extrabold text-stone-900">How to Join the Network</p>
-<p class="mt-4 text-xl text-stone-600 max-w-3xl mx-auto">Joining is a simple, guided process. We're with you every step of the way.</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
-<div class="flex items-start"><span class="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-stone-900 font-bold mr-4">1</span><div><h3 class="text-xl font-bold">Choose Your Package</h3><p class="text-stone-600 mt-1">Select the starter package or franchise tier that best fits your goals.</p></div></div>
-<div class="flex items-start"><span class="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-stone-900 font-bold mr-4">2</span><div><h3 class="text-xl font-bold">Apply Online</h3><p class="text-stone-600 mt-1">Fill out our simple multi-step application form with your basic and farm details.</p></div></div>
-<div class="flex items-start"><span class="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-stone-900 font-bold mr-4">3</span><div><h3 class="text-xl font-bold">Get Verified & Start</h3><p class="text-stone-600 mt-1">Our team will contact you to verify your application and begin your mentorship.</p></div></div>
-</div>
-</div>
+        <!-- ========== END PACKAGES ========== -->
 
-
-<div class="text-center mb-14 pt-12 border-t border-stone-200">
-<h2 class="text-base font-semibold text-amber-600 uppercase">Membership Packages</h2>
-<p class="mt-2 text-4xl font-extrabold text-stone-900">Find Your Fit</p>
-</div>
-
-
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<div class="bg-slate-50 rounded-2xl p-8 shadow-lg border flex flex-col">
-<h3 class="text-2xl font-bold">Starter Package</h3>
-<p class="text-sm font-medium text-stone-500 mb-4">Ideal for Urban Families</p>
-<p class="text-4xl font-extrabold mb-4">₱20,000+</p>
-<ul class="space-y-2 text-stone-700 flex-grow">
-<li>Essential Chicks & Feeds</li>
-<li>Starter Coop Kit</li>
-<li>“Guided Business Warranty”</li>
-<li>1-Year Membership</li>
-</ul>
-<a href="#membership" class="mt-6 btn bg-stone-800 text-white rounded-lg py-3">Apply for Starter</a>
-</section>
         <!-- ========== MEMBERSHIP ========== -->
         <section id="membership" class="py-16 sm:py-24 bg-slate-50">
             <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -600,6 +399,7 @@
                                     <button type="button" data-prev-step="2" class="btn bg-slate-200 text-slate-700 hover:bg-slate-300 w-1/3 form-nav-btn">Back</button>
                                     <button type="submit" id="form-submit-btn" class="btn btn-dark w-2/3">Submit Application</button>
                                 </div>
+                                <div id="form-error" class="hidden text-red-600 text-sm text-center mt-4"></div>
                             </div>
                             
                             <!-- Form Success Message -->
@@ -664,7 +464,7 @@
                             <span class="text-sm text-stone-500">Compliance | Nov 01, 2025</span>
                             <h4 class="text-xl font-bold text-stone-900 my-2">5 Key Changes in the Latest DA Circular</h4>
                             <p class="text-stone-600 mb-4 text-sm">We break down the new regulations so you can stay compliant and focus on your business.</p>
-                            <a href="#!" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                            <a href="https" class="font-semibold text-amber-600 hover:text-amber-700" target="_blank" rel="noopener noreferrer">Read More <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                     <!-- Blog Post 2 -->
@@ -674,7 +474,7 @@
                             <span class="text-sm text-stone-500">Farm Ops | Oct 28, 2025</span>
                             <h4 class="text-xl font-bold text-stone-900 my-2">How to Calculate Your Feed Conversion Ratio (FCR)</h4>
                             <p class="text-stone-600 mb-4 text-sm">This one metric is key to your profitability. Learn the simple way to track it and improve it.</p>
-                            <a href="#!" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                            <a href="https" class="font-semibold text-amber-600 hover:text-amber-700" target="_blank" rel="noopener noreferrer">Read More <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                     <!-- Blog Post 3 -->
@@ -684,7 +484,7 @@
                             <span class="text-sm text-stone-500">Best Practices | Oct 22, 2025</span>
                             <h4 class="text-xl font-bold text-stone-900 my-2">Biosecurity 101: Protecting Your Flock (and Profit)</h4>
                             <p class="text-stone-600 mb-4 text-sm">The 3 simple, low-cost procedures every farmer must implement today to prevent disaster.</p>
-                            <a href="#!" class="font-semibold text-amber-600 hover:text-amber-700">Read More <span aria-hidden="true">&rarr;</span></a>
+                            <a href="https" class="font-semibold text-amber-600 hover:text-amber-700" target="_blank" rel="noopener noreferrer">Read More <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                 </div>
@@ -692,7 +492,7 @@
         </section>
 
         <!-- ========== FINAL CTA ========== -->
-        <section class="py-16 sm:py-24 bg-stone-800 text-white">
+        <section id="final-cta" class="py-16 sm:py-24 bg-stone-800 text-white">
             <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center fade-in-section">
                 <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6">
                     Stop Competing. Start Conquering.
@@ -772,10 +572,222 @@
     </footer>
     <!-- ========== END FOOTER ========== -->
 
+    <!-- ========== LOGIN MODAL ========== -->
+    <div id="login-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+
+        <!-- Modal Panel -->
+        <div class="relative z-10 w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-stone-400 hover:text-stone-600">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <h2 class="text-3xl font-bold text-stone-900 text-center mb-4">Member Login</h2>
+            <p class="text-stone-600 text-center mb-6">Access your LCE Dashboard.</p>
+
+            <form id="login-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="login-email" class="block text-sm font-medium text-stone-700">Email Address</label>
+                        <input type="email" name="login-email" id="login-email" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="login-password" class="block text-sm font-medium text-stone-700">Password</label>
+                        <input type="password" name="login-password" id="login-password" required class="mt-1 block w-full px-4 py-3 border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    
+                    <!-- NEW: Forgot Password Link -->
+                    <div class="text-right text-sm">
+                        <a href="mailto:admin@legalchicks.vip?subject=Forgot%20Password%20Request" class="font-medium text-amber-600 hover:underline">
+                            Forgot Password?
+                        </a>
+                    </div>
+                </div>
+                <div id="login-error" class="hidden text-red-600 text-sm text-center mt-4"></div>
+                <button type="submit" id="login-submit-btn" class="btn btn-primary w-full mt-6">
+                    Log In
+                </button>
+                <p class="text-sm text-center text-stone-500 mt-4">
+                    Not a member? <a href="#membership" id="login-join-link" class="font-medium text-amber-600 hover:underline">Apply here</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== NEW: PACKAGE MODALS ========== -->
+
+    <!-- Starter Package Modal -->
+    <div id="starter-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Starter Package</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱20,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Hardware & Supplies</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>50 Day-Old-Chicks (Pure, Vaccinated RIR)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Sacks LCE-Certified Starter Feed</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Standard Waterers</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>2 Standard Feeders</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1 Brooder Heat Lamp & Bulb</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1 Digital Thermometer</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Support & Platform</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>"Guided Business Warranty" (Mentorship until 1st profit)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>1-Year LCE Network Membership</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to LCE App (Community & Basic KPIs)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>DIY Starter Coop Blueprints & Guide</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to LGU & DA Partnership Programs</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business Package Modal -->
+    <div id="business-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Business Package</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱100,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Platform & Tech</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full LCE Platform Access (KPIs, Benchmarking)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>LCE "Co-Pilot" AI Assistant (Pro Tier)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Access to Gamified Learning Hub</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Predictive Alerts (Weather & Flock Health)</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Market & Supply Chain</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Exclusive Access to Bulk-Rate Pricing on Chicks & Feeds</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Eligibility for "Legal Chicks Certified" Program</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in Collective Market Hub (Sell to Hotels, etc.)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Supply Chain & Logistics Support</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Facilitated Financing Assistance</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Franchise Package Modal -->
+    <div id="franchise-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-container">
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm modal-backdrop"></div>
+        <div class="relative z-10 w-full max-w-2xl bg-white rounded-2xl shadow-xl">
+            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 modal-close-btn">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="p-8 sm:p-10">
+                <h2 class="text-3xl font-bold text-stone-900 mb-2">Franchise Tier</h2>
+                <p class="text-lg text-stone-600 mb-6">Full inclusions for the <span class="font-bold text-stone-800">₱150,000+</span> package.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Business-in-a-Box</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Official LCE Branding & Logo License</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Scaled Starter Kit (250+ RIR Chicks, Feeds, Equip.)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Guaranteed, First-Priority Supply Chain Access</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Inclusion in National Joint Marketing Campaigns</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Become a Regional "LCE Ambassador"</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-stone-700 uppercase tracking-wider text-sm mb-3">Platform & Exclusivity</h4>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Full LCE Platform Access (KPIs, AI Co-Pilot)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Regional Admin Dashboard (to manage referrals)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Exclusive rights to host LCE Orientations in your area</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Receive 5% Referral Commission Bonus</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i><span>Direct Support from LCE Leadership</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-b-2xl text-right">
+                <a href="#membership" class="btn btn-primary modal-apply-btn">Apply for this Package</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== END PACKAGE MODALS ========== -->
+
 
     <!-- ========== JAVASCRIPT ========== -->
-    <script>
+    <script type="module">
+        // Import Firebase modules
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, addDoc, collection, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- FIREBASE & APP STATE ---
+        let app, db, auth;
+        let LCE_APP_ID = 'default-app-id';
+
+        async function initializeFirebase() {
+            if (typeof __firebase_config === 'undefined') {
+                console.error('Firebase config is not available.');
+                return;
+            }
+            
+            try {
+                const firebaseConfig = JSON.parse(__firebase_config);
+                app = initializeApp(firebaseConfig);
+                db = getFirestore(app);
+                auth = getAuth(app);
+                setLogLevel('Debug'); // Enable Firestore logging
+
+                // 1. Get App ID
+                if (typeof __app_id !== 'undefined') {
+                    LCE_APP_ID = __app_id;
+                }
+                window.LCE_APP_ID = LCE_APP_ID; // Make it globally available for the form
+                console.log("App ID:", LCE_APP_ID);
+
+                // 2. Authenticate the user
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+                console.log("Firebase initialized and user signed in anonymously.", auth.currentUser?.uid);
+
+            } catch (error) {
+                console.error("Firebase initialization error:", error);
+            }
+        }
+        
+        // --- STANDARD PAGE SCRIPT ---
         document.addEventListener('DOMContentLoaded', () => {
+            
+            // Initialize Firebase first
+            initializeFirebase();
 
             // 1. Initialize Lucide Icons
             lucide.createIcons();
@@ -815,7 +827,7 @@
                     // On mobile, the bg is white, so we don't add white text
                     if (!mobileMenu.classList.contains('hidden')) {
                          logoText.classList.remove('text-white');
-                    } else {
+                    } else { // Only add white text if not logged in and on top
                          logoText.classList.add('text-white');
                     }
                 }
@@ -912,10 +924,11 @@
                 }, 5000); // Change slide every 5 seconds
             }
 
-            // 7. Multi-Step Form with Backend Simulation
+            // 7. Multi-Step Form with REAL Backend
             const form = document.getElementById('multi-step-form');
             const progressBar = document.getElementById('progress-bar');
             const successMessage = document.getElementById('form-success');
+            const errorMessage = document.getElementById('form-error');
             
             form.addEventListener('click', (e) => {
                 if (e.target.matches('.form-nav-btn')) {
@@ -958,40 +971,181 @@
                 }
             });
             
-            form.addEventListener('submit', (e) => {
+            // Make the submit handler async to await database operations
+            form.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 
                 const submitBtn = document.getElementById('form-submit-btn');
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = 'Submitting...';
                 submitBtn.classList.add('btn-loading');
+                errorMessage.classList.add('hidden'); // Hide old errors
 
-                // --- BACKEND SIMULATION ---
+                // --- REAL BACKEND WORK ---
                 // 1. Collect form data
                 const formData = new FormData(form);
                 const data = Object.fromEntries(formData.entries());
-                
-                // 2. Log data to console (simulates sending to backend)
-                console.log("--- FORM SUBMISSION (BACKEND SIMULATION) ---");
-                console.log("Data to be sent to /api/apply:", data);
-                console.log("-------------------------------------------");
+                data.status = 'pending'; // Add a status for review
+                data.submittedAt = new Date().toISOString(); // Add a timestamp
 
-                // 3. Simulate network delay
-                setTimeout(() => {
-                    // Hide last step
-                    document.getElementById('form-step-3').classList.add('hidden');
-                    // Hide progress bar
-                    progressBar.parentElement.classList.add('hidden');
-                    // Show success
-                    successMessage.classList.remove('hidden');
-                    // Re-render icon
-                    lucide.createIcons();
-                }, 1500); // 1.5 second delay
+                // 2. Get App ID from window
+                const appId = window.LCE_APP_ID || 'default-app-id';
+                const collectionPath = `/artifacts/${appId}/public/data/membership_applications`;
+
+                try {
+                    // 3. Save to Firestore
+                    if (!db) {
+                        throw new Error("Database is not initialized.");
+                    }
+                    
+                    const docRef = await addDoc(collection(db, collectionPath), data);
+                    
+                    console.log("--- FORM SUBMISSION (REAL BACKEND) ---");
+                    console.log("Data saved to Firestore collection:", collectionPath);
+                    console.log("Document ID:", docRef.id);
+                    console.log("Data:", data);
+                    console.log("---------------------------------------");
+
+                    // 4. Show success
+                    // Wait a tiny bit for the animation to feel real
+                    setTimeout(() => {
+                        document.getElementById('form-step-3').classList.add('hidden');
+                        progressBar.parentElement.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                        lucide.createIcons();
+                    }, 500); // 0.5 second delay
+
+                } catch (error) {
+                    console.error("Error adding document to Firestore: ", error);
+                    // Show error message to user
+                    errorMessage.textContent = 'Error: Could not submit application. Please check your connection and try again.';
+                    errorMessage.classList.remove('hidden');
+                    // Re-enable the button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Application';
+                    submitBtn.classList.remove('btn-loading');
+                }
             });
 
 
             // 8. Set Current Year in Footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 9. --- NEW: LOGIN & DASHBOARD LOGIC ---
+
+            const loginModal = document.getElementById('login-modal');
+            const loginForm = document.getElementById('login-form');
+            const loginSubmitBtn = document.getElementById('login-submit-btn');
+            const loginError = document.getElementById('login-error');
+            
+            // Header buttons
+            const loginBtns = [
+                document.getElementById('header-login-btn-desktop'),
+                document.getElementById('header-login-btn-mobile')
+            ];
+
+            // --- REFACTORED MODAL LOGIC ---
+            
+            // Get all modal components
+            const modalContainers = document.querySelectorAll('.modal-container');
+            const modalOpenBtns = document.querySelectorAll('.modal-open-btn');
+            const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+            const modalBackdrops = document.querySelectorAll('.modal-backdrop');
+            const modalApplyBtns = document.querySelectorAll('.modal-apply-btn');
+
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    lucide.createIcons(); // Render icons in modal
+                }
+            }
+
+            function closeModal(modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+
+            // Open Modals
+            modalOpenBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modalId = btn.getAttribute('data-modal-target');
+                    openModal(modalId);
+                });
+            });
+
+            // Close Modals with 'X' button
+            modalCloseBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modal = btn.closest('.modal-container');
+                    closeModal(modal);
+                });
+            });
+
+            // Close Modals by clicking backdrop
+            modalBackdrops.forEach(backdrop => {
+                backdrop.addEventListener('click', () => {
+                    const modal = backdrop.closest('.modal-container');
+                    closeModal(modal);
+                });
+            });
+
+            // Close Modals and scroll to apply form
+            modalApplyBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const modal = btn.closest('.modal-container');
+                    closeModal(modal);
+                    // No need for smooth scroll, the link href="#membership" handles it
+                });
+            });
+
+
+            // Handle Login Form (Simulation)
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                loginError.classList.add('hidden');
+
+                const email = document.getElementById('login-email').value;
+                const pass = document.getElementById('login-password').value;
+
+                if (!email || !pass) {
+                    loginError.textContent = 'Please enter both email and password.';
+                    loginError.classList.remove('hidden');
+                    return;
+                }
+
+                // Start loading
+                loginSubmitBtn.disabled = true;
+                loginSubmitBtn.innerHTML = 'Logging In...';
+                loginSubmitBtn.classList.add('btn-loading');
+
+                // Simulate a network request
+                setTimeout(() => {
+                    // --- SIMULATED VALIDATION ---
+                    // In a real app, this would be a fetch() call to your backend
+                    if (email === "member@legalchicks.vip" && pass === "password123") {
+                        // VALID
+                        console.log("Login successful (simulation)");
+                        loginSubmitBtn.innerHTML = 'Success! Redirecting...';
+                        
+                        // Redirect to the page the user will provide later
+                        setTimeout(() => {
+                            window.location.href = "member-dashboard.html"; // Placeholder redirect
+                        }, 1000);
+
+                    } else {
+                        // INVALID
+                        console.log("Login failed (simulation)");
+                        loginSubmitBtn.disabled = false;
+                        loginSubmitBtn.innerHTML = 'Log In';
+                        loginSubmitBtn.classList.remove('btn-loading');
+                        
+                        loginError.textContent = 'Invalid email or password. Please try again.';
+                        loginError.classList.remove('hidden');
+                    }
+                }, 1500); // 1.5 second simulated delay
+            });
 
         });
     </script>
