@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login - Legal Chicks Empowerment Network</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Custom color palette (from index.html) */
+        :root {
+            --color-primary: #8B4513; /* SaddleBrown - strong, earthy */
+            --color-accent: #F59E0B;   /* Amber 500 - optimistic, warm */
+            --color-dark: #1F2937;     /* Gray 800 - professional text */
+            --color-light-bg: #F9FAFB; /* Gray 50 - clean background */
+        }
+        
+        /* Custom Button Styles (from index.html) */
+        .btn {
+            @apply inline-block px-6 py-3 rounded-lg text-base font-semibold transition-all duration-300 shadow-md;
+        }
+        .btn-primary {
+            @apply bg-amber-500 text-stone-900 hover:bg-amber-600 hover:shadow-lg transform hover:-translate-y-0.5;
+        }
+        .btn-dark {
+             @apply bg-stone-800 text-white hover:bg-stone-900 hover:shadow-lg transform hover:-translate-y-0.5;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Minimal Header with Logo -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center sm:justify-start h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3" aria-label="Homepage">
+                    <img src="https://placehold.co/48x48/8B4513/FFFFFF?text=LCE&font=inter" alt="LCE Logo" class="h-9 w-9 rounded-full">
+                    <span class="text-xl font-bold text-stone-800">Legal Chicks Empowerment Network</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form Section -->
+    <main class="flex items-center justify-center min-h-[calc(100vh-10rem)] py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md">
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-stone-900 tracking-tight">
+                        Member Login
+                    </h2>
+                    <p class="mt-2 text-stone-600">
+                        Access your Empowerment Dashboard.
+                    </p>
+                </div>
+
+                <!-- Login Error Message (Hidden by default) -->
+                <div id="login-error" class="hidden mt-4 p-3 bg-red-100 border border-red-300 rounded-lg text-center">
+                    <span class="font-medium text-red-700">Invalid email or password. Please try again.</span>
+                </div>
+
+                <form id="login-form" class="mt-8 space-y-6" action="#" method="POST">
+                    <input type="hidden" name="remember" value="true">
+                    <div class="rounded-md shadow-sm space-y-4">
+                        <!-- Email Address -->
+                        <div>
+                            <label for="email-address" class="font-medium text-stone-700">Email address</label>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required
+                                   class="mt-1 appearance-none relative block w-full px-4 py-3 border border-stone-300 placeholder-stone-400 text-stone-900 rounded-lg focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                   placeholder="you@yourfarm.com">
+                        </div>
+                        
+                        <!-- Password -->
+                        <div>
+                            <label for="password" class="font-medium text-stone-700">Password</label>
+                            <div class="relative mt-1">
+                                <input id="password" name="password" type="password" autocomplete="current-password" required
+                                       class="appearance-none relative block w-full px-4 py-3 border border-stone-300 placeholder-stone-400 text-stone-900 rounded-lg focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                       placeholder="••••••••">
+                                <button type="button" id="toggle-password" class="absolute inset-y-0 right-0 pr-3 flex items-center text-stone-400 hover:text-stone-600">
+                                    <i id="eye-icon" data-lucide="eye" class="h-5 w-5"></i>
+                                    <i id="eye-off-icon" data-lucide="eye-off" class="h-5 w-5 hidden"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox"
+                                   class="h-4 w-4 text-amber-600 focus:ring-amber-500 border-stone-300 rounded">
+                            <label for="remember-me" class="ml-2 block text-sm text-stone-700">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <div class="text-sm">
+                            <a href="mailto:admin@legalchicks.vip?subject=Forgot%20Password%20Request" class="font-medium text-amber-600 hover:text-amber-700">
+                                Forgot your password?
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="login-btn" type="submit"
+                                class="btn btn-primary w-full flex justify-center py-3.5">
+                            <span id="login-btn-text">Log In</span>
+                            <!-- Loading Spinner (Hidden by default) -->
+                            <svg id="login-loading-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-stone-900 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-stone-600">
+                        Not a member yet?
+                        <a href="index.html#apply" class="font-medium text-amber-600 hover:text-amber-700">
+                            Apply for membership
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Initialize Lucide Icons
+            lucide.createIcons();
+
+            // 2. Password Show/Hide Toggle
+            const toggleBtn = document.getElementById('toggle-password');
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eye-icon');
+            const eyeOffIcon = document.getElementById('eye-off-icon');
+
+            toggleBtn.addEventListener('click', () => {
+                const isPassword = passwordInput.type === 'password';
+                passwordInput.type = isPassword ? 'text' : 'password';
+                eyeIcon.classList.toggle('hidden', isPassword);
+                eyeOffIcon.classList.toggle('hidden', !isPassword);
+            });
+
+            // 3. Login Form Submission
+            const loginForm = document.getElementById('login-form');
+            const loginBtn = document.getElementById('login-btn');
+            const loginBtnText = document.getElementById('login-btn-text');
+            const loginSpinner = document.getElementById('login-loading-spinner');
+            const loginError = document.getElementById('login-error');
+            const emailInput = document.getElementById('email-address');
+
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const email = emailInput.value;
+                const password = passwordInput.value;
+                
+                // --- SIMULATION ---
+                // In a real app, you would send this to a backend for verification.
+                // Here, we just check against a hardcoded test user.
+                
+                // Show loading state
+                loginBtnText.classList.add('hidden');
+                loginSpinner.classList.remove('hidden');
+                loginBtn.disabled = true;
+                loginError.classList.add('hidden');
+
+                // Simulate network delay
+                setTimeout(() => {
+                    // Check credentials (TEST ONLY)
+                    if (email === 'member@legalchicks.vip' && password === 'password123') {
+                        // SUCCESS
+                        loginBtnText.innerText = 'Success! Redirecting...';
+                        loginBtnText.classList.remove('hidden');
+                        loginSpinner.classList.add('hidden');
+                        
+                        // Redirect to the member dashboard
+                        window.location.href = 'member-dashboard.html';
+
+                    } else {
+                        // FAILURE
+                        loginBtnText.classList.remove('hidden');
+                        loginSpinner.classList.add('hidden');
+                        loginBtn.disabled = false;
+                        loginError.classList.remove('hidden'); // Show the error message
+                    }
+                }, 1500); // 1.5 second delay
+            });
+        });
+    </script>
+</body>
+</html>
